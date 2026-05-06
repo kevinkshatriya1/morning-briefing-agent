@@ -68,19 +68,19 @@ def get_market_briefing():
 def send_email(briefing):
     sender = os.getenv("GMAIL_ADDRESS")
     password = os.getenv("GMAIL_APP_PASSWORD")
-    recipient = os.getenv("RECIPIENT_EMAIL")
+    recipients = [os.getenv("RECIPIENT_EMAIL"), os.getenv("RECIPIENT_EMAIL_2")]
     today = date.today().strftime("%B %d, %Y")
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = f"Morning Market Briefing — {today}"
     msg["From"] = sender
-    msg["To"] = recipient
+    msg["To"] = ", ".join(recipients)
 
     msg.attach(MIMEText(briefing, "html"))
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
         server.login(sender, password)
-        server.sendmail(sender, recipient, msg.as_string())
+        server.sendmail(sender, recipients, msg.as_string())
 
     print("Email sent.")
 
