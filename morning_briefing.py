@@ -15,7 +15,7 @@ def get_market_briefing():
 
     try:
         response = client.messages.create(
-            model="claude-sonnet-4-6",
+            model="claude-haiku-4-5-20251001",
             max_tokens=16000,
             tools=[{
                 "type": "web_search_20250305",
@@ -25,6 +25,7 @@ def get_market_briefing():
         Be specific — real tickers, real numbers, real context. No fluff. No disclaimers.
         Use clear, simple language — explain why things matter in plain English, not Wall Street jargon.
         Do not narrate your process or thinking. Do not write anything before the HTML. Start your response with <!DOCTYPE html> immediately.
+        Limit yourself to 5 web searches maximum.
         Output only clean HTML. No markdown. No code fences. Just the HTML.""",
             messages=[{
                 "role": "user",
@@ -37,7 +38,7 @@ def get_market_briefing():
 3. TICKER BREAKDOWN — 6-8 tickers worth watching. For each: what's happening (2-3 sentences), why it matters (2-3 sentences), the play (2-3 sentences), and a clear BUY / HOLD / AVOID rating with one sentence explaining why.
 4. UNUSUAL VOLUME / OPTIONS ACTIVITY — 3-4 tickers with abnormal activity, explain what the positioning signals and why it matters.
 5. EARNINGS — last night's reports with key numbers, plus 3-4 ones to watch today with analyst expectations.
-6. SECTOR WATCH — what's hot and what's not across AI, tech, energy, financial services, cyclical, defensive. 2-3 sentences per sector.
+6. SECTOR WATCH — what's hot and what's not across AI, tech, energy, financial services, cyclical, defensive. Also cover gold and silver — price levels, trend, and whether they're worth watching. 2-3 sentences per sector.
 7. WILDCARD — one under-the-radar idea or macro theme worth knowing. 2-3 paragraphs.
 
     HTML formatting requirements:
