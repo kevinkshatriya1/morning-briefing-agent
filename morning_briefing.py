@@ -51,6 +51,9 @@ def get_market_briefing():
     - Add extra padding between sections: margin 48px 0 on each section
     - Add margin-bottom 24px between paragraphs inside each section
     - Do not use italic text anywhere
+    - Each section must have a clear bold header with a colored left border: border-left 4px solid #1a1a2e, padding-left 12px
+    - Each ticker card must include: ticker symbol in large bold text (20px), company name below it in gray (#666), then what's happening, why it matters, the play, and BUY/HOLD/AVOID as a colored badge (BUY = green #2d6a4f, HOLD = orange #e07b00, AVOID = red #c0392b)
+    - BUY/HOLD/AVOID must be displayed as a pill badge: border-radius 20px, padding 4px 12px, color white, font-weight bold
     - Top of email: large greeting — Good Morning. Here's your briefing for {today}.
     - Output ONLY the HTML. Nothing else."""
             }]       
