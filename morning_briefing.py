@@ -32,12 +32,13 @@ def get_market_briefing():
 
     Use this exact structure:
 
-1. MARKET OVERVIEW - pre-market sentiment, key macro news driving the day, general large events. 3-4 paragraphs minimum.
-2. TICKER BREAKDOWN - 6-8 tickers worth watching. For each: what's happening (2-3 sentences), why it matters (2-3 sentences), the play (2-3 sentences). Clearly label, what's happening, why it matters, and the play.  and a clear BUY / HOLD / AVOID rating with one sentence explaining why.
-3. UNUSUAL VOLUME / OPTIONS ACTIVITY - 3-4 tickers with abnormal activity, explain what the positioning signals and why it matters.
-4. EARNINGS - last night's reports with key numbers, plus 3-4 ones to watch today with analyst expectations.
-5. SECTOR WATCH - what's hot and what's not across AI, tech, energy, financial services, cyclical, defensive. 2-3 sentences per sector.
-6. WILDCARD - one under-the-radar idea or macro theme worth knowing. 2-3 paragraphs.
+1. MARKET PULSE — overall market health check. Cover: is the market overbought or oversold (RSI levels), fear vs greed index, VIX level and what it signals, put/call ratio, any divergences worth watching. Write this in plain English — tell her what it all means, not just the numbers.
+2. MARKET OVERVIEW — pre-market sentiment, key macro news driving the day, general large events. 3-4 paragraphs minimum.
+3. TICKER BREAKDOWN — 6-8 tickers worth watching. For each: what's happening (2-3 sentences), why it matters (2-3 sentences), the play (2-3 sentences), and a clear BUY / HOLD / AVOID rating with one sentence explaining why.
+4. UNUSUAL VOLUME / OPTIONS ACTIVITY — 3-4 tickers with abnormal activity, explain what the positioning signals and why it matters.
+5. EARNINGS — last night's reports with key numbers, plus 3-4 ones to watch today with analyst expectations.
+6. SECTOR WATCH — what's hot and what's not across AI, tech, energy, financial services, cyclical, defensive. 2-3 sentences per sector.
+7. WILDCARD — one under-the-radar idea or macro theme worth knowing. 2-3 paragraphs.
 
     HTML formatting requirements:
     - In the <head>, import Google Fonts: Playfair Display (headers) and Nunito (body)
